@@ -4,7 +4,7 @@
 
 Preparatory, exploratory analyses for a proposed master's research project by **Mohammed Alghifari**.
 
-**Question:** what do a few of a new person's labelled exercise examples add beyond a general model and fair alternatives, and how does predictive performance change across people?
+**Question:** if only a few labelled examples from a new person are available, does adapting an exercise-assessment model with them add anything beyond a well-selected general model and a simpler calibration with the same examples, and for whom does it help or harm?
 
 Personal adaptation is an established technique. This repository documents comparisons, limitations and negative results; it does not introduce a new personalisation algorithm or establish clinical validity.
 
