@@ -1,14 +1,14 @@
-# Personal Adaptation for Motion-Based Exercise Assessment in Sport and Rehabilitation
+# Personal Adaptation of Machine-Learning Models for Exercise Execution Assessment in Sport and Rehabilitation
 
-*A Controlled Study Using Wearable Sensors with a Markerless Video Extension*
+*A Person-Level Comparison Using Wearable Sensors*
 
 Preparatory, exploratory analyses for a proposed master's research project by **Mohammed Alghifari**.
 
-**Question:** if only a few labelled examples from a new person are available, does adapting an exercise-assessment model with them add anything beyond a well-selected general model and a simpler calibration with the same examples, and for whom does it help or harm?
+**Question:** if only a few labelled examples from a new person are available, does adapting an exercise-assessment model with them add anything beyond a general model selected on other people and a simpler calibration with the same examples? And for which individuals do the predictions improve or get worse?
 
 Personal adaptation is an established technique. This repository documents comparisons, limitations and negative results; it does not introduce a new personalisation algorithm or establish clinical validity.
 
-**Repository scope.** This source release contains the completed preparatory studies below. The proposed master's design additionally compares classifier adaptation with simpler calibration using the same labels after source-person model selection. That future comparison, including the proposed eight-example primary budget, is not claimed as an implemented or completed study in this release.
+**Repository scope.** This source release contains the completed preparatory studies below. The proposed master's design additionally compares classifier adaptation with simpler calibration using the same labels after source-person model selection. That future comparison, including the proposed eight-example primary budget, is not claimed as an implemented or completed study in this release. The master's plan also includes an original two-session dataset (after ethics approval) and a research web interface that reads these outputs; neither is part of this release.
 
 Repository: [mohamedalgafri/personal-calibration-exercise-assessment](https://github.com/mohamedalgafri/personal-calibration-exercise-assessment).
 

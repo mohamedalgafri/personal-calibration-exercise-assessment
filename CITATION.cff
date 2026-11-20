@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code, please cite this repository and the original datasets."
-title: "Personal Adaptation for Motion-Based Exercise Assessment in Sport and Rehabilitation: Preparatory Analyses"
+title: "Personal Adaptation of Machine-Learning Models for Exercise Execution Assessment in Sport and Rehabilitation: Preparatory Analyses"
 type: software
 repository-code: "https://github.com/mohamedalgafri/personal-calibration-exercise-assessment"
 authors:
