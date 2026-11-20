@@ -1,0 +1,2 @@
+Ex2	person 8: not eligible (Addendum D, front only; correct 2, incorrect 10, orientation groups ['front'])
+Ex2	person 9: not eligible (Addendum D, front only; correct 4, incorrect 7, orientation groups ['front'])

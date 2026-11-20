@@ -1,0 +1,196 @@
+SQT/IMU: recordings=108 excluded=0 [] (20s)
+SQT/OPT: recordings=97 excluded=19 ['A06SQT0_1_interp.csv (missing body)', 'A06SQT0_2_interp.csv (missing body)', 'A07SQT0_2_interp.csv (missing body)', 'A06SQT1_1_interp.csv (missing body)', 'A06SQT1_2_interp.csv (missing body)', 'A07SQT0_1_interp.csv (missing body)'] (64s)
+SQT: eligible persons (all modalities) = 21
+  SQT/IMU rep0 fold0 69s
+  SQT/IMU rep0 fold1 72s
+  SQT/IMU rep0 fold2 76s
+  SQT/IMU rep0 fold3 79s
+  SQT/IMU rep0 fold4 83s
+  SQT/IMU rep1 fold0 86s
+  SQT/IMU rep1 fold1 89s
+  SQT/IMU rep1 fold2 92s
+  SQT/IMU rep1 fold3 96s
+  SQT/IMU rep1 fold4 99s
+  SQT/OPT rep0 fold0 104s
+  SQT/OPT rep0 fold1 108s
+  SQT/OPT rep0 fold2 112s
+  SQT/OPT rep0 fold3 116s
+  SQT/OPT rep0 fold4 119s
+  SQT/OPT rep1 fold0 123s
+  SQT/OPT rep1 fold1 127s
+  SQT/OPT rep1 fold2 131s
+  SQT/OPT rep1 fold3 134s
+  SQT/OPT rep1 fold4 138s
+HAA/IMU: recordings=223 excluded=0 [] (156s)
+HAA/OPT: recordings=236 excluded=4 ['A09HAAR1_1_interp.csv', 'A10HAAR1_2_interp.csv (missing body)', 'C01HAAL1_1_interp.csv (missing body)', 'C01HAAR1_2_interp.csv'] (245s)
+HAA: eligible persons (all modalities) = 25
+  HAA/IMU rep0 fold0 249s
+  HAA/IMU rep0 fold1 253s
+  HAA/IMU rep0 fold2 256s
+  HAA/IMU rep0 fold3 260s
+  HAA/IMU rep0 fold4 263s
+  HAA/IMU rep1 fold0 267s
+  HAA/IMU rep1 fold1 271s
+  HAA/IMU rep1 fold2 274s
+  HAA/IMU rep1 fold3 277s
+  HAA/IMU rep1 fold4 281s
+  HAA/OPT rep0 fold0 286s
+  HAA/OPT rep0 fold1 291s
+  HAA/OPT rep0 fold2 296s
+  HAA/OPT rep0 fold3 300s
+  HAA/OPT rep0 fold4 305s
+  HAA/OPT rep1 fold0 310s
+  HAA/OPT rep1 fold1 314s
+  HAA/OPT rep1 fold2 319s
+  HAA/OPT rep1 fold3 323s
+  HAA/OPT rep1 fold4 328s
+SQZ/IMU: recordings=118 excluded=0 [] (348s)
+SQZ/OPT: recordings=120 excluded=0 [] (531s)
+SQZ: eligible persons (all modalities) = 27
+  SQZ/IMU rep0 fold0 535s
+  SQZ/IMU rep0 fold1 539s
+  SQZ/IMU rep0 fold2 543s
+  SQZ/IMU rep0 fold3 546s
+  SQZ/IMU rep0 fold4 550s
+  SQZ/IMU rep1 fold0 554s
+  SQZ/IMU rep1 fold1 558s
+  SQZ/IMU rep1 fold2 562s
+  SQZ/IMU rep1 fold3 565s
+  SQZ/IMU rep1 fold4 569s
+  SQZ/OPT rep0 fold0 574s
+  SQZ/OPT rep0 fold1 580s
+  SQZ/OPT rep0 fold2 585s
+  SQZ/OPT rep0 fold3 589s
+  SQZ/OPT rep0 fold4 594s
+  SQZ/OPT rep1 fold0 599s
+  SQZ/OPT rep1 fold1 604s
+  SQZ/OPT rep1 fold2 608s
+  SQZ/OPT rep1 fold3 612s
+  SQZ/OPT rep1 fold4 617s
+EAH/IMU: recordings=116 excluded=0 [] (637s)
+EAH/OPT: recordings=120 excluded=0 [] (930s)
+EAH: eligible persons (all modalities) = 29
+  EAH/IMU rep0 fold0 935s
+  EAH/IMU rep0 fold1 940s
+  EAH/IMU rep0 fold2 945s
+  EAH/IMU rep0 fold3 950s
+  EAH/IMU rep0 fold4 954s
+  EAH/IMU rep1 fold0 959s
+  EAH/IMU rep1 fold1 964s
+  EAH/IMU rep1 fold2 968s
+  EAH/IMU rep1 fold3 973s
+  EAH/IMU rep1 fold4 977s
+  EAH/OPT rep0 fold0 983s
+  EAH/OPT rep0 fold1 988s
+  EAH/OPT rep0 fold2 994s
+  EAH/OPT rep0 fold3 1000s
+  EAH/OPT rep0 fold4 1004s
+  EAH/OPT rep1 fold0 1010s
+  EAH/OPT rep1 fold1 1016s
+  EAH/OPT rep1 fold2 1021s
+  EAH/OPT rep1 fold3 1027s
+  EAH/OPT rep1 fold4 1032s
+# PLAN5 results (plan sha256 034a1ab2…386b). Runtime 1032s
+
+SQT/IMU: recordings=108 excluded=0 [] (20s)
+SQT/OPT: recordings=97 excluded=19 ['A06SQT0_1_interp.csv (missing body)', 'A06SQT0_2_interp.csv (missing body)', 'A07SQT0_2_interp.csv (missing body)', 'A06SQT1_1_interp.csv (missing body)', 'A06SQT1_2_interp.csv (missing body)', 'A07SQT0_1_interp.csv (missing body)'] (64s)
+SQT: eligible persons (all modalities) = 21
+HAA/IMU: recordings=223 excluded=0 [] (156s)
+HAA/OPT: recordings=236 excluded=4 ['A09HAAR1_1_interp.csv', 'A10HAAR1_2_interp.csv (missing body)', 'C01HAAL1_1_interp.csv (missing body)', 'C01HAAR1_2_interp.csv'] (245s)
+HAA: eligible persons (all modalities) = 25
+SQZ/IMU: recordings=118 excluded=0 [] (348s)
+SQZ/OPT: recordings=120 excluded=0 [] (531s)
+SQZ: eligible persons (all modalities) = 27
+EAH/IMU: recordings=116 excluded=0 [] (637s)
+EAH/OPT: recordings=120 excluded=0 [] (930s)
+EAH: eligible persons (all modalities) = 29
+
+PERS* = personal classifier with source-derived feature scaling (Addendum A). CTRL-NEW = new windows from another test person of the same fold.
+
+Balanced accuracy per person (mean of 2 repeats); differences in BA points with bootstrap 95% CI over persons; tie = |d| < 0.5.
+
+## SQT/IMU (n=21 persons) — GEN BA 0.921
+
+| B | ADAPT | CTRL | CTRL-NEW | PERS* | ADAPT−GEN [CI] | ADAPT−CTRL [CI] | ADAPT−CTRL-NEW [CI] | PERS*−ADAPT [CI] (median; +/−/=) |
+|---|---|---|---|---|---|---|---|---|
+| 4 | 0.937 | 0.923 | 0.923 | 0.732 | +1.5 [-0.5, +4.3] | +1.4 [-0.6, +3.8] | +1.4 [-0.7, +4.0] | -20.5 [-26.7, -14.5] (-20.3; 0/19/2) |
+| 8 | 0.945 | 0.918 | 0.923 | 0.810 | +2.3 [+0.0, +5.6] | +2.7 [+0.2, +6.0] | +2.2 [-0.1, +5.3] | -13.5 [-20.1, -7.5] (-13.2; 2/16/3) |
+| 16 | 0.951 | 0.918 | 0.911 | 0.854 | +3.0 [+0.5, +6.5] | +3.3 [+0.7, +6.6] | +4.0 [+1.0, +7.9] | -9.7 [-15.8, -4.4] (-4.1; 1/19/1) |
+
+- First tested budget (4/8/16) with evidence PERS* > ADAPT (CI lower > 0): none  [not a general minimum]
+
+## SQT/OPT (n=21 persons) — GEN BA 0.709
+
+| B | ADAPT | CTRL | CTRL-NEW | PERS* | ADAPT−GEN [CI] | ADAPT−CTRL [CI] | ADAPT−CTRL-NEW [CI] | PERS*−ADAPT [CI] (median; +/−/=) |
+|---|---|---|---|---|---|---|---|---|
+| 4 | 0.746 | 0.718 | 0.721 | 0.562 | +3.6 [+0.3, +7.6] | +2.8 [+0.3, +5.8] | +2.5 [-1.1, +6.4] | -18.4 [-24.5, -12.2] (-21.3; 3/17/1) |
+| 8 | 0.766 | 0.716 | 0.716 | 0.635 | +5.6 [+1.7, +10.3] | +5.0 [+1.3, +9.3] | +5.0 [+0.9, +9.7] | -13.0 [-19.6, -5.7] (-17.3; 3/18/0) |
+| 16 | 0.781 | 0.712 | 0.711 | 0.682 | +7.2 [+3.0, +12.3] | +6.9 [+3.0, +11.7] | +7.1 [+2.4, +12.1] | -9.9 [-15.3, -4.3] (-11.1; 5/16/0) |
+
+- First tested budget (4/8/16) with evidence PERS* > ADAPT (CI lower > 0): none  [not a general minimum]
+
+## HAA/IMU (n=25 persons) — GEN BA 0.924
+
+| B | ADAPT | CTRL | CTRL-NEW | PERS* | ADAPT−GEN [CI] | ADAPT−CTRL [CI] | ADAPT−CTRL-NEW [CI] | PERS*−ADAPT [CI] (median; +/−/=) |
+|---|---|---|---|---|---|---|---|---|
+| 4 | 0.940 | 0.919 | 0.926 | 0.863 | +1.5 [+0.2, +3.1] | +2.0 [+0.9, +3.5] | +1.4 [+0.3, +2.9] | -7.7 [-13.3, -2.7] (-4.6; 6/17/2) |
+| 8 | 0.953 | 0.923 | 0.924 | 0.878 | +2.8 [+0.7, +5.9] | +3.0 [+1.0, +5.9] | +2.8 [+0.6, +6.0] | -7.5 [-12.9, -2.4] (-1.9; 7/16/2) |
+| 16 | 0.955 | 0.920 | 0.924 | 0.925 | +3.1 [+1.1, +5.5] | +3.6 [+1.6, +6.0] | +3.1 [+1.0, +5.9] | -3.0 [-5.7, -0.6] (-0.8; 7/15/3) |
+
+- First tested budget (4/8/16) with evidence PERS* > ADAPT (CI lower > 0): none  [not a general minimum]
+
+## HAA/OPT (n=25 persons) — GEN BA 0.857
+
+| B | ADAPT | CTRL | CTRL-NEW | PERS* | ADAPT−GEN [CI] | ADAPT−CTRL [CI] | ADAPT−CTRL-NEW [CI] | PERS*−ADAPT [CI] (median; +/−/=) |
+|---|---|---|---|---|---|---|---|---|
+| 4 | 0.863 | 0.849 | 0.848 | 0.649 | +0.6 [-0.7, +2.1] | +1.4 [+0.2, +2.9] | +1.5 [+0.3, +2.7] | -21.4 [-29.2, -13.9] (-19.4; 4/21/0) |
+| 8 | 0.862 | 0.854 | 0.853 | 0.669 | +0.6 [-1.5, +2.6] | +0.9 [-0.9, +2.7] | +0.9 [-1.0, +2.9] | -19.3 [-27.1, -11.7] (-15.2; 5/20/0) |
+| 16 | 0.866 | 0.852 | 0.851 | 0.670 | +0.9 [-1.5, +3.3] | +1.4 [-0.9, +3.6] | +1.5 [-1.0, +3.9] | -19.5 [-27.6, -12.0] (-17.7; 3/20/2) |
+
+- First tested budget (4/8/16) with evidence PERS* > ADAPT (CI lower > 0): none  [not a general minimum]
+
+## SQZ/IMU (n=27 persons) — GEN BA 0.792
+
+| B | ADAPT | CTRL | CTRL-NEW | PERS* | ADAPT−GEN [CI] | ADAPT−CTRL [CI] | ADAPT−CTRL-NEW [CI] | PERS*−ADAPT [CI] (median; +/−/=) |
+|---|---|---|---|---|---|---|---|---|
+| 4 | 0.853 | 0.784 | 0.796 | 0.770 | +6.1 [+3.4, +9.3] | +7.0 [+4.1, +9.9] | +5.7 [+3.2, +8.3] | -8.3 [-14.9, -2.0] (-8.3; 7/18/2) |
+| 8 | 0.872 | 0.780 | 0.800 | 0.811 | +8.0 [+4.4, +12.0] | +9.2 [+5.7, +13.0] | +7.2 [+3.7, +10.7] | -6.1 [-11.2, -1.0] (-5.0; 8/16/3) |
+| 16 | 0.882 | 0.783 | 0.804 | 0.876 | +9.0 [+5.6, +12.7] | +9.9 [+6.2, +13.8] | +7.8 [+4.4, +11.3] | -0.5 [-4.4, +3.5] (+0.0; 11/12/4) |
+
+- First tested budget (4/8/16) with evidence PERS* > ADAPT (CI lower > 0): none  [not a general minimum]
+
+## SQZ/OPT (n=27 persons) — GEN BA 0.792
+
+| B | ADAPT | CTRL | CTRL-NEW | PERS* | ADAPT−GEN [CI] | ADAPT−CTRL [CI] | ADAPT−CTRL-NEW [CI] | PERS*−ADAPT [CI] (median; +/−/=) |
+|---|---|---|---|---|---|---|---|---|
+| 4 | 0.815 | 0.788 | 0.792 | 0.525 | +2.3 [+0.5, +4.4] | +2.7 [+1.0, +4.6] | +2.3 [+0.6, +4.2] | -28.9 [-38.0, -19.6] (-25.6; 2/25/0) |
+| 8 | 0.836 | 0.785 | 0.787 | 0.608 | +4.4 [+1.6, +7.4] | +5.0 [+2.1, +8.4] | +4.9 [+2.0, +8.0] | -22.8 [-30.6, -14.9] (-19.9; 3/24/0) |
+| 16 | 0.874 | 0.790 | 0.791 | 0.711 | +8.2 [+4.6, +12.1] | +8.3 [+4.7, +12.1] | +8.2 [+4.6, +11.9] | -16.3 [-22.6, -10.2] (-15.1; 4/23/0) |
+
+- First tested budget (4/8/16) with evidence PERS* > ADAPT (CI lower > 0): none  [not a general minimum]
+
+## EAH/IMU (n=29 persons) — GEN BA 0.898
+
+| B | ADAPT | CTRL | CTRL-NEW | PERS* | ADAPT−GEN [CI] | ADAPT−CTRL [CI] | ADAPT−CTRL-NEW [CI] | PERS*−ADAPT [CI] (median; +/−/=) |
+|---|---|---|---|---|---|---|---|---|
+| 4 | 0.933 | 0.897 | 0.897 | 0.847 | +3.5 [+0.6, +7.2] | +3.6 [+0.8, +7.4] | +3.6 [+0.8, +7.3] | -8.6 [-13.3, -4.3] (-3.3; 5/20/4) |
+| 8 | 0.943 | 0.897 | 0.900 | 0.891 | +4.5 [+1.1, +8.7] | +4.6 [+1.4, +8.9] | +4.2 [+0.8, +8.6] | -5.2 [-9.7, -1.2] (-2.6; 6/19/4) |
+| 16 | 0.952 | 0.902 | 0.898 | 0.923 | +5.4 [+1.6, +9.9] | +5.0 [+1.3, +9.3] | +5.3 [+1.8, +9.7] | -2.8 [-5.8, -0.3] (-1.1; 7/15/7) |
+
+- First tested budget (4/8/16) with evidence PERS* > ADAPT (CI lower > 0): none  [not a general minimum]
+
+## EAH/OPT (n=29 persons) — GEN BA 0.897
+
+| B | ADAPT | CTRL | CTRL-NEW | PERS* | ADAPT−GEN [CI] | ADAPT−CTRL [CI] | ADAPT−CTRL-NEW [CI] | PERS*−ADAPT [CI] (median; +/−/=) |
+|---|---|---|---|---|---|---|---|---|
+| 4 | 0.906 | 0.891 | 0.892 | 0.676 | +0.9 [-0.3, +2.1] | +1.5 [+0.4, +2.8] | +1.4 [+0.3, +2.6] | -23.0 [-28.8, -17.4] (-18.0; 0/27/2) |
+| 8 | 0.922 | 0.894 | 0.891 | 0.760 | +2.5 [+0.4, +5.1] | +2.9 [+0.8, +5.2] | +3.1 [+1.4, +5.3] | -16.3 [-22.3, -10.6] (-8.8; 1/24/4) |
+| 16 | 0.940 | 0.891 | 0.892 | 0.839 | +4.3 [+1.5, +7.6] | +4.9 [+2.4, +7.8] | +4.7 [+2.3, +7.6] | -10.1 [-15.6, -5.0] (-3.3; 3/22/4) |
+
+- First tested budget (4/8/16) with evidence PERS* > ADAPT (CI lower > 0): none  [not a general minimum]
+
+## Expectations
+
+- IMU: E1 (ADAPT−GEN ≥ 2, CI>0 at B=16) in 4/4 exercises; E2 (ADAPT−CTRL CI>0) in 4/4; E2b (ADAPT−CTRL-NEW CI>0) in 4/4.
+- OPT: E1 (ADAPT−GEN ≥ 2, CI>0 at B=16) in 3/4 exercises; E2 (ADAPT−CTRL CI>0) in 3/4; E2b (ADAPT−CTRL-NEW CI>0) in 3/4.
+- E3 (descriptive, 8 cells): Spearman ρ(GEN BA, PERS−ADAPT at B=16) = +0.33. Cells: SQT/IMU GEN 0.921 / PERS−ADAPT -9.7; SQT/OPT GEN 0.709 / PERS−ADAPT -9.9; HAA/IMU GEN 0.924 / PERS−ADAPT -3.0; HAA/OPT GEN 0.857 / PERS−ADAPT -19.5; SQZ/IMU GEN 0.792 / PERS−ADAPT -0.5; SQZ/OPT GEN 0.792 / PERS−ADAPT -16.3; EAH/IMU GEN 0.898 / PERS−ADAPT -2.8; EAH/OPT GEN 0.897 / PERS−ADAPT -10.1

@@ -1,0 +1,3 @@
+rgs	elodie	EXCLUDED from exercise: fewer than 9 valid reps in ['rgs_abduction'] (counts [10, 10, 8, 10])
+rgs	julia	EXCLUDED from exercise: fewer than 9 valid reps in ['rgs_stork'] (counts [10, 10, 10, 7])
+rgs	latifah	EXCLUDED from exercise: fewer than 9 valid reps in ['rgs_stork'] (counts [10, 10, 10, 7])

@@ -1,0 +1,103 @@
+SQT: recordings=108 persons_complete=26 11s
+  SQT rep0 fold0 14s
+  SQT rep0 fold1 17s
+  SQT rep0 fold2 20s
+  SQT rep0 fold3 23s
+  SQT rep0 fold4 26s
+  SQT rep1 fold0 29s
+  SQT rep1 fold1 32s
+  SQT rep1 fold2 35s
+  SQT rep1 fold3 38s
+  SQT rep1 fold4 41s
+KFE: recordings=226 persons_complete=30 51s
+  KFE rep0 fold0 54s
+  KFE rep0 fold1 57s
+  KFE rep0 fold2 60s
+  KFE rep0 fold3 63s
+  KFE rep0 fold4 67s
+  KFE rep1 fold0 70s
+  KFE rep1 fold1 74s
+  KFE rep1 fold2 77s
+  KFE rep1 fold3 81s
+  KFE rep1 fold4 84s
+EFE: recordings=108 persons_complete=27 95s
+  EFE rep0 fold0 99s
+  EFE rep0 fold1 102s
+  EFE rep0 fold2 105s
+  EFE rep0 fold3 107s
+  EFE rep0 fold4 110s
+  EFE rep1 fold0 113s
+  EFE rep1 fold1 116s
+  EFE rep1 fold2 119s
+  EFE rep1 fold3 122s
+  EFE rep1 fold4 125s
+# Pilot 3 results (PHYTMO; plan PLAN3.md). Runtime 125s
+
+Window = 2 s (step 1 s). CAL-k = first k windows of each class (correct, wrong) from the person's series 1 (≈ k+1 s of each). Evaluation on series 2 only.
+Session error = |estimated − true share of correct movement| in percentage points (40-window sessions, true share uniform 0–100%).
+
+Excluded recordings with missing values (data-quality rule): 4 files: C02KFEL1_1.csv, C02KFEL0_2.csv, C02KFEL1_2.csv, C02KFEL0_1.csv
+
+## SQT (26 persons)
+
+| method | balanced accuracy (new people) | session error (pp) | 'mostly wrong' flag correct | worst person: bal. acc / session err | folds better than GEN (bal. acc / session) |
+|---|---|---|---|---|---|
+| GEN | 0.876 | 10.4 | 87% | 0.52 / 51 | - |
+| CAL-3 | 0.919 | 6.4 | 93% | 0.76 / 15 | 9 / 8 |
+| CAL-5 | 0.923 | 5.9 | 94% | 0.78 / 13 | 9 / 9 |
+| CAL-10 | 0.935 | 4.9 | 95% | 0.76 / 15 | 9 / 8 |
+| CAL-all | 0.951 | 4.1 | 96% | 0.84 / 11 | 10 / 10 |
+| CALC-5 | 0.896 | 8.6 | 87% | 0.71 / 24 | 7 / 7 |
+| CALC-10 | 0.888 | 9.6 | 85% | 0.66 / 29 | 7 / 7 |
+| PERS-all | 0.895 | 8.9 | 89% | 0.50 / 49 | 6 / 6 |
+| GEN+personalACC | nan | 11.8 | 87% | nan / 43 | - / 3 |
+
+Exploratory (Addendum A): balanced accuracy by age group (A=20s … E=60s), GEN vs CAL-10:
+- A: n=10, GEN 0.830, CAL-10 0.935
+- B: n=4, GEN 0.968, CAL-10 0.974
+- C: n=4, GEN 0.910, CAL-10 0.935
+- D: n=4, GEN 0.873, CAL-10 0.904
+- E: n=4, GEN 0.871, CAL-10 0.931
+
+## KFE (30 persons)
+
+| method | balanced accuracy (new people) | session error (pp) | 'mostly wrong' flag correct | worst person: bal. acc / session err | folds better than GEN (bal. acc / session) |
+|---|---|---|---|---|---|
+| GEN | 0.922 | 6.5 | 91% | 0.45 / 42 | - |
+| CAL-3 | 0.941 | 4.7 | 94% | 0.62 / 24 | 10 / 10 |
+| CAL-5 | 0.950 | 3.9 | 95% | 0.70 / 17 | 10 / 10 |
+| CAL-10 | 0.954 | 3.7 | 95% | 0.71 / 16 | 9 / 10 |
+| CAL-all | 0.964 | 3.1 | 96% | 0.88 / 12 | 8 / 10 |
+| CALC-5 | 0.941 | 5.1 | 92% | 0.71 / 26 | 6 / 5 |
+| CALC-10 | 0.937 | 5.6 | 92% | 0.69 / 28 | 5 / 4 |
+| PERS-all | 0.940 | 5.3 | 92% | 0.66 / 27 | 6 / 5 |
+| GEN+personalACC | nan | 8.9 | 90% | nan / 40 | - / 1 |
+
+Exploratory (Addendum A): balanced accuracy by age group (A=20s … E=60s), GEN vs CAL-10:
+- A: n=10, GEN 0.899, CAL-10 0.930
+- B: n=5, GEN 0.953, CAL-10 0.985
+- C: n=5, GEN 0.862, CAL-10 0.957
+- D: n=5, GEN 0.953, CAL-10 0.955
+- E: n=5, GEN 0.964, CAL-10 0.968
+
+## EFE (27 persons)
+
+| method | balanced accuracy (new people) | session error (pp) | 'mostly wrong' flag correct | worst person: bal. acc / session err | folds better than GEN (bal. acc / session) |
+|---|---|---|---|---|---|
+| GEN | 0.915 | 7.9 | 91% | 0.50 / 55 | - |
+| CAL-3 | 0.941 | 4.9 | 93% | 0.67 / 22 | 9 / 9 |
+| CAL-5 | 0.946 | 4.5 | 94% | 0.69 / 20 | 10 / 10 |
+| CAL-10 | 0.950 | 4.1 | 95% | 0.72 / 18 | 10 / 10 |
+| CAL-all | 0.969 | 2.7 | 97% | 0.88 / 10 | 10 / 10 |
+| CALC-5 | 0.928 | 6.4 | 91% | 0.57 / 36 | 5 / 5 |
+| CALC-10 | 0.921 | 6.8 | 91% | 0.55 / 37 | 4 / 4 |
+| PERS-all | 0.953 | 4.4 | 94% | 0.78 / 19 | 7 / 7 |
+| GEN+personalACC | nan | 9.2 | 90% | nan / 55 | - / 2 |
+
+Exploratory (Addendum A): balanced accuracy by age group (A=20s … E=60s), GEN vs CAL-10:
+- A: n=8, GEN 0.934, CAL-10 0.949
+- B: n=4, GEN 0.928, CAL-10 0.970
+- C: n=5, GEN 0.972, CAL-10 0.986
+- D: n=5, GEN 0.855, CAL-10 0.886
+- E: n=5, GEN 0.876, CAL-10 0.964
+

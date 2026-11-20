@@ -1,0 +1,20 @@
+full_561 fold 0
+full_561 fold 1
+full_561 fold 2
+full_561 fold 3
+full_561 fold 4
+weak_20 fold 0
+weak_20 fold 1
+weak_20 fold 2
+weak_20 fold 3
+weak_20 fold 4
+# POST-HOC diagnostic (exploratory; written after seeing the pilot results)
+
+Natural recordings, rep 0 (30 held-out persons). AE = mean absolute error of the 6-class proportions; ×480 = minutes per class per 8 h.
+
+| classifier | window acc. | mean |own − training confusion| | train prior | CC | ACC | EMQ | oracle ACC (person's own confusion) | corr(CC error, confusion diff) |
+|---|---|---|---|---|---|---|---|---|
+| full_561 | 0.930 | 0.0344 | 0.0153 | 0.0195 (9.4 min) | 0.0284 | 0.0310 | 0.0001 | 0.90 |
+|  worst 3 persons (CC) | p14: acc 0.73, CC 43 min, oracle 1 min; p20: acc 0.77, CC 35 min, oracle 0 min; p10: acc 0.77, CC 26 min, oracle 0 min | | | | | | | |
+| weak_20 | 0.740 | 0.0595 | 0.0153 | 0.0410 (19.7 min) | 0.0714 | 0.0964 | 0.0001 | 0.91 |
+|  worst 3 persons (CC) | p14: acc 0.51, CC 62 min, oracle 1 min; p6: acc 0.64, CC 51 min, oracle 0 min; p22: acc 0.70, CC 31 min, oracle 0 min | | | | | | | |

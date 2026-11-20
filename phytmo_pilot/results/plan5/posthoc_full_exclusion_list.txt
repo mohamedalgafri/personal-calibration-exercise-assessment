@@ -1,0 +1,4 @@
+SQT 97 ok; 19 excluded: ['A06SQT0_1_interp.csv (missing body)', 'A06SQT0_2_interp.csv (missing body)', 'A06SQT1_1_interp.csv (missing body)', 'A06SQT1_2_interp.csv (missing body)', 'A07SQT0_1_interp.csv (missing body)', 'A07SQT0_2_interp.csv (missing body)', 'A07SQT1_1_interp.csv (missing body)', 'A07SQT1_2_interp.csv (missing body)', 'A08SQT0_1_interp.csv (missing body)', 'A08SQT0_2_interp.csv (missing body)', 'A08SQT1_1_interp.csv (missing body)', 'A08SQT1_2_interp.csv (missing body)', 'D01SQT0_1_interp.csv (missing body)', 'D01SQT0_2_interp.csv (missing body)', 'D01SQT1_1_interp.csv (missing body)', 'D01SQT1_2_interp.csv (missing body)', 'D03SQT0_1_interp.csv (missing body)', 'D03SQT0_2_interp.csv (missing body)', 'D03SQT1_2_interp.csv (missing body)']
+HAA 236 ok; 4 excluded: ['A09HAAR1_1_interp.csv', 'A10HAAR1_2_interp.csv (missing body)', 'C01HAAL1_1_interp.csv (missing body)', 'C01HAAR1_2_interp.csv']
+SQZ 120 ok; 0 excluded: []
+EAH 120 ok; 0 excluded: []

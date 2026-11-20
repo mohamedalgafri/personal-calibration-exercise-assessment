@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PLAN7 frame-exact extraction</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1b1b1b; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #161616; --fg: #ececec; } }
+  body { background: var(--bg); color: var(--fg); font: 14px/1.4 system-ui, sans-serif; margin: 16px; }
+  pre { white-space: pre-wrap; }
+</style>
+</head>
+<body>
+<h1>PLAN7 frame-exact extraction (Addendum C; MediaPipe lite 0.10.14)</h1>
+<p>Videos: <code id="list"></code></p>
+<pre id="log"></pre>
+<script type="module">
+// PLAN7 Addendum C: frames are decoded by ffmpeg into data/frames/<id>/%06d.jpg; image i is frame i by construction.
+import { FilesetResolver, PoseLandmarker } from "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14/vision_bundle.mjs";
+const q = new URLSearchParams(location.search);
+const IDS = (q.get("ids") || "").split(",").filter(Boolean);
+const ATTEMPT = q.get("attempt") || "jpg1";
+const FPS = 30;
+document.getElementById("list").textContent = IDS.join(", ") + ` (${ATTEMPT})`;
+const log = (s) => { document.getElementById("log").textContent += s + "\n"; };
+const fileset = await FilesetResolver.forVisionTasks("https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14/wasm");
+const img = async (id, i) => {
+  const r = await fetch(`../data/frames/${id}/${String(i).padStart(6, "0")}.jpg`);
+  if (!r.ok) throw new Error(`missing frame ${i}`);
+  return createImageBitmap(await r.blob());
+};
+let pending = [...IDS];
+while (pending.length) {
+ const notReady = [];
+ for (const id of pending) {
+  const done = await fetch(`../data/frames/${id}/.done`);
+  if (!done.ok) { notReady.push(id); continue; }        // not decoded yet: retry later
+  const N = parseInt((await done.text()).trim(), 10);
+  const claim = await fetch(`/claim/${id}_${ATTEMPT}`, { method: "POST" });
+  if (claim.status !== 200) { continue; }              // done or taken by another tab
+  const lm = await PoseLandmarker.createFromOptions(fileset, {
+    baseOptions: { modelAssetPath: "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_lite/float16/1/pose_landmarker_lite.task", delegate: "CPU" },
+    runningMode: "VIDEO", numPoses: 1,
+  });
+  const frames = []; let W = 0, H = 0;
+  const t0 = performance.now();
+  let next = img(id, 0);
+  for (let i = 0; i < N; i++) {
+    const bmp = await next;
+    if (i + 1 < N) next = img(id, i + 1);          // prefetch the next image while detecting
+    W = bmp.width; H = bmp.height;
+    const res = lm.detectForVideo(bmp, Math.round(i * 1000 / FPS) + 1);
+    bmp.close();
+    const p = res.landmarks && res.landmarks[0];
+    frames.push(p ? p.map(k => [k.x * W, k.y * H, k.visibility ?? 0]) : null);
+    if (i % 300 === 0) log(`${id}: frame ${i}/${N}, ${(i / ((performance.now() - t0) / 1000)).toFixed(1)} fps, poses ${frames.filter(f => f).length}`);
+  }
+  const secs = (performance.now() - t0) / 1000;
+  const out = { id, attempt: ATTEMPT, method: "jpg-frames (Addendum C)", model: "lite", version: "tasks-vision@0.10.14",
+                width: W, height: H, n_frames: N, seconds: secs, fps_processing: N / secs, frames };
+  const r = await fetch(`/save/${id}_${ATTEMPT}.json`, { method: "POST", body: JSON.stringify(out) });
+  log(`${id}: done ${N} frames, ${(N / secs).toFixed(1)} fps, poses ${frames.filter(f => f).length}, saved ${await r.text()}`);
+  lm.close();
+ }
+ pending = notReady;
+ if (pending.length) { log(`waiting for ${pending.length} videos to be decoded…`); await new Promise(r => setTimeout(r, 60000)); }
+}
+log("ALL DONE"); document.title = "DONE PLAN7 frame extraction";
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+# run_log.txt was emptied on 16 Nov by posthoc_uninvolved_sensors.py (it executed the head of run_plan6.py, which opens this file in 'w' mode; fixed). Restored below from stdout_run.txt, which captured the same lines during the run.
+[    35s] rd: eligible persons 19: ['austra', 'darryl', 'elodie', 'erna', 'etsuko', 'gregers', 'hamit', 'hans', 'julia', 'jung-hee', 'katee', 'latifah', 'laurel', 'marquise', 'neves', 'rehema', 'rushda', 'yaxkin', 'ziri']
+[    80s] rgs: eligible persons 15: ['austra', 'darryl', 'erna', 'etsuko', 'gregers', 'hamit', 'jung-hee', 'katee', 'laurel', 'marquise', 'neves', 'rehema', 'rushda', 'yaxkin', 'ziri']
+[    80s] exclusions: 3 lines (results/exclusions.txt)
+[   227s] rd rep0 fold0: test [np.str_('gregers'), np.str_('julia'), np.str_('jung-hee'), np.str_('rehema')] done
+[   371s] rd rep0 fold1: test [np.str_('austra'), np.str_('darryl'), np.str_('elodie'), np.str_('laurel')] done
+[   501s] rd rep0 fold2: test [np.str_('katee'), np.str_('neves'), np.str_('rushda'), np.str_('yaxkin')] done
+[   624s] rd rep0 fold3: test [np.str_('etsuko'), np.str_('hans'), np.str_('latifah'), np.str_('marquise')] done
+[   768s] rd rep0 fold4: test [np.str_('erna'), np.str_('hamit'), np.str_('ziri')] done
+[   881s] rd rep1 fold0: test [np.str_('hamit'), np.str_('katee'), np.str_('laurel'), np.str_('ziri')] done
+[  1027s] rd rep1 fold1: test [np.str_('darryl'), np.str_('gregers'), np.str_('rehema'), np.str_('rushda')] done
+[  1139s] rd rep1 fold2: test [np.str_('hans'), np.str_('jung-hee'), np.str_('neves'), np.str_('yaxkin')] done
+[  1270s] rd rep1 fold3: test [np.str_('austra'), np.str_('elodie'), np.str_('erna'), np.str_('julia')] done
+[  1418s] rd rep1 fold4: test [np.str_('etsuko'), np.str_('latifah'), np.str_('marquise')] done
+[  1509s] rgs rep0 fold0: test [np.str_('austra'), np.str_('darryl'), np.str_('marquise')] done
+[  1611s] rgs rep0 fold1: test [np.str_('hamit'), np.str_('katee'), np.str_('yaxkin')] done
+[  1705s] rgs rep0 fold2: test [np.str_('jung-hee'), np.str_('rehema'), np.str_('ziri')] done
+[  1801s] rgs rep0 fold3: test [np.str_('erna'), np.str_('gregers'), np.str_('rushda')] done
+[  1898s] rgs rep0 fold4: test [np.str_('etsuko'), np.str_('laurel'), np.str_('neves')] done
+[  1983s] rgs rep1 fold0: test [np.str_('hamit'), np.str_('katee'), np.str_('rushda')] done
+[  2068s] rgs rep1 fold1: test [np.str_('darryl'), np.str_('jung-hee'), np.str_('neves')] done
+[  2137s] rgs rep1 fold2: test [np.str_('laurel'), np.str_('marquise'), np.str_('yaxkin')] done
+[  2229s] rgs rep1 fold3: test [np.str_('austra'), np.str_('erna'), np.str_('ziri')] done
+[  2325s] rgs rep1 fold4: test [np.str_('etsuko'), np.str_('gregers'), np.str_('rehema')] done
+[  2325s] raw outputs written; summarising
+Traceback (most recent call last):
+  File "gaitex_plan6/code/run_plan6.py", line 448, in <module>
+    ars = np.array([np.mean([t[f'{p}_RS'] for t in Ta]) for p in P]); prs = np.array([np.mean([t[f'{p}_RS'] for t in Tp]) for p in P])
+                             ~^^^^^^^^^^^
+KeyError: 'austra_RS'

@@ -1,0 +1,31 @@
+rep 0 fold 0 done 107s
+rep 0 fold 1 done 212s
+rep 0 fold 2 done 308s
+rep 0 fold 3 done 401s
+rep 0 fold 4 done 494s
+rep 1 fold 0 done 586s
+rep 1 fold 1 done 683s
+rep 1 fold 2 done 785s
+rep 1 fold 3 done 883s
+rep 1 fold 4 done 974s
+rep 2 fold 0 done 1067s
+rep 2 fold 1 done 1159s
+rep 2 fold 2 done 1253s
+rep 2 fold 3 done 1346s
+rep 2 fold 4 done 1439s
+runs= 1 thr=0.3 stab=0.03 [-0.02,0.08] size=12.2 foldMAE=6.81
+runs= 1 thr=0.5 stab=0.03 [-0.02,0.08] size=12.2 foldMAE=6.81
+runs= 1 thr=0.7 stab=0.03 [-0.02,0.08] size=12.2 foldMAE=6.81
+runs= 5 thr=0.3 stab=0.13 [0.08,0.18] size=15.5 foldMAE=6.65
+runs= 5 thr=0.5 stab=0.12 [0.04,0.20] size=4.9 foldMAE=6.68
+runs= 5 thr=0.7 stab=0.04 [-0.01,0.08] size=1.9 foldMAE=6.86
+runs=10 thr=0.3 stab=0.20 [0.14,0.26] size=17.7 foldMAE=6.74
+runs=10 thr=0.5 stab=0.11 [0.04,0.18] size=5.1 foldMAE=6.83
+runs=10 thr=0.7 stab=0.11 [0.04,0.18] size=1.9 foldMAE=6.68
+runs=20 thr=0.3 stab=0.23 [0.15,0.30] size=12.7 foldMAE=6.79
+runs=20 thr=0.5 stab=0.13 [0.05,0.22] size=3.6 foldMAE=6.75
+runs=20 thr=0.7 stab=0.06 [-0.01,0.14] size=1.7 foldMAE=6.70
+runs=30 thr=0.3 stab=0.25 [0.18,0.32] size=10.9 foldMAE=7.00
+runs=30 thr=0.5 stab=0.15 [0.07,0.24] size=3.7 foldMAE=6.95
+runs=30 thr=0.7 stab=0.06 [-0.00,0.12] size=1.5 foldMAE=6.71
+DONE 1439 s

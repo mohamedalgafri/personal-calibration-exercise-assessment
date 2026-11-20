@@ -1,0 +1,8 @@
+Run-to-run variability of binary PSO on the SAME training data (KIMORE ex1, Ridge alpha=10, V-shaped BPSO, 30 particles x 60 iterations, lambda=0.5).
+10 runs per fold, first 3 outer folds of repeat 0 (seed 1000). Checked 14 Nov 2026.
+
+fold 0: test MAE over 10 runs mean 6.89 sd 0.35 (CV 5%)  | subset size 12.5 | stability 0.08 | mean Jaccard overlap 0.12
+fold 1: test MAE over 10 runs mean 6.16 sd 0.51 (CV 8%)  | subset size 12.6 | stability 0.08 | mean Jaccard overlap 0.11
+fold 2: test MAE over 10 runs mean 5.00 sd 0.86 (CV 17%) | subset size 8.1  | stability 0.03 | mean Jaccard overlap 0.06
+
+Reading: the error changes moderately between runs (5-17%), but two runs share only about 6-12% of their selected features.

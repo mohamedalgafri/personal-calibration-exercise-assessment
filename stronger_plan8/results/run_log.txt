@@ -1,0 +1,108 @@
+[    58s] PHYTMO SQT: eligible persons 21
+[   103s] SQT/IMU rep0 fold0 done
+[   163s] SQT/IMU rep0 fold1 done
+[   211s] SQT/IMU rep0 fold2 done
+[   237s] SQT/IMU rep0 fold3 done
+[   260s] SQT/IMU rep0 fold4 done
+[   283s] SQT/IMU rep1 fold0 done
+[   303s] SQT/IMU rep1 fold1 done
+[   327s] SQT/IMU rep1 fold2 done
+[   349s] SQT/IMU rep1 fold3 done
+[   367s] SQT/IMU rep1 fold4 done
+[   396s] SQT/OPT rep0 fold0 done
+[   423s] SQT/OPT rep0 fold1 done
+[   459s] SQT/OPT rep0 fold2 done
+[   483s] SQT/OPT rep0 fold3 done
+[   520s] SQT/OPT rep0 fold4 done
+[   550s] SQT/OPT rep1 fold0 done
+[   579s] SQT/OPT rep1 fold1 done
+[   605s] SQT/OPT rep1 fold2 done
+[   625s] SQT/OPT rep1 fold3 done
+[   640s] SQT/OPT rep1 fold4 done
+[   752s] PHYTMO HAA: eligible persons 25
+[   778s] HAA/IMU rep0 fold0 done
+[   792s] HAA/IMU rep0 fold1 done
+[   804s] HAA/IMU rep0 fold2 done
+[   816s] HAA/IMU rep0 fold3 done
+[   829s] HAA/IMU rep0 fold4 done
+[   842s] HAA/IMU rep1 fold0 done
+[   854s] HAA/IMU rep1 fold1 done
+[   868s] HAA/IMU rep1 fold2 done
+[   887s] HAA/IMU rep1 fold3 done
+[   921s] HAA/IMU rep1 fold4 done
+[   961s] HAA/OPT rep0 fold0 done
+[  1018s] HAA/OPT rep0 fold1 done
+[  1041s] HAA/OPT rep0 fold2 done
+[  1066s] HAA/OPT rep0 fold3 done
+[  1093s] HAA/OPT rep0 fold4 done
+[  1124s] HAA/OPT rep1 fold0 done
+[  1149s] HAA/OPT rep1 fold1 done
+[  1173s] HAA/OPT rep1 fold2 done
+[  1202s] HAA/OPT rep1 fold3 done
+[  1223s] HAA/OPT rep1 fold4 done
+[  1458s] PHYTMO SQZ: eligible persons 27
+[  1564s] SQZ/IMU rep0 fold0 done
+[  1577s] SQZ/IMU rep0 fold1 done
+[  1589s] SQZ/IMU rep0 fold2 done
+[  1602s] SQZ/IMU rep0 fold3 done
+[  1615s] SQZ/IMU rep0 fold4 done
+[  1629s] SQZ/IMU rep1 fold0 done
+[  1645s] SQZ/IMU rep1 fold1 done
+[  1667s] SQZ/IMU rep1 fold2 done
+[  1701s] SQZ/IMU rep1 fold3 done
+[  1735s] SQZ/IMU rep1 fold4 done
+[  1754s] SQZ/OPT rep0 fold0 done
+[  1772s] SQZ/OPT rep0 fold1 done
+[  1788s] SQZ/OPT rep0 fold2 done
+[  1804s] SQZ/OPT rep0 fold3 done
+[  1821s] SQZ/OPT rep0 fold4 done
+[  1838s] SQZ/OPT rep1 fold0 done
+[  1859s] SQZ/OPT rep1 fold1 done
+[  1874s] SQZ/OPT rep1 fold2 done
+[  1890s] SQZ/OPT rep1 fold3 done
+[  1910s] SQZ/OPT rep1 fold4 done
+[  2325s] PHYTMO EAH: eligible persons 29
+[  2372s] EAH/IMU rep0 fold0 done
+[  2393s] EAH/IMU rep0 fold1 done
+[  2440s] EAH/IMU rep0 fold2 done
+[  2481s] EAH/IMU rep0 fold3 done
+[  2502s] EAH/IMU rep0 fold4 done
+[  2533s] EAH/IMU rep1 fold0 done
+[  2562s] EAH/IMU rep1 fold1 done
+[  2591s] EAH/IMU rep1 fold2 done
+[  2627s] EAH/IMU rep1 fold3 done
+[  2652s] EAH/IMU rep1 fold4 done
+[  2674s] EAH/OPT rep0 fold0 done
+[  2697s] EAH/OPT rep0 fold1 done
+[  2719s] EAH/OPT rep0 fold2 done
+[  2736s] EAH/OPT rep0 fold3 done
+[  2755s] EAH/OPT rep0 fold4 done
+[  2831s] EAH/OPT rep1 fold0 done
+[  2889s] EAH/OPT rep1 fold1 done
+[  2926s] EAH/OPT rep1 fold2 done
+[  2972s] EAH/OPT rep1 fold3 done
+[  3001s] EAH/OPT rep1 fold4 done
+[  3046s] GAITEX rd: eligible persons 19
+[  3063s] GAITEX rd rep0 fold0 done
+[  3079s] GAITEX rd rep0 fold1 done
+[  3098s] GAITEX rd rep0 fold2 done
+[  3114s] GAITEX rd rep0 fold3 done
+[  3128s] GAITEX rd rep0 fold4 done
+[  3144s] GAITEX rd rep1 fold0 done
+[  3162s] GAITEX rd rep1 fold1 done
+[  3178s] GAITEX rd rep1 fold2 done
+[  3193s] GAITEX rd rep1 fold3 done
+[  3209s] GAITEX rd rep1 fold4 done
+[  3260s] GAITEX rgs: eligible persons 15
+[  3272s] GAITEX rgs rep0 fold0 done
+[  3284s] GAITEX rgs rep0 fold1 done
+[  3296s] GAITEX rgs rep0 fold2 done
+[  3309s] GAITEX rgs rep0 fold3 done
+[  3319s] GAITEX rgs rep0 fold4 done
+[  3330s] GAITEX rgs rep1 fold0 done
+[  3355s] GAITEX rgs rep1 fold1 done
+[  3366s] GAITEX rgs rep1 fold2 done
+[  3388s] GAITEX rgs rep1 fold3 done
+[  3408s] GAITEX rgs rep1 fold4 done
+[  3408s] sanity: 138 GEN-LR values recomputed, max |difference| vs saved = 0.00e+00
+[  3413s] summary written

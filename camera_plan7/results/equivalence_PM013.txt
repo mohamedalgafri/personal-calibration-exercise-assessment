@@ -1,0 +1,3 @@
+Addendum C equivalence check, PM_013: Stage A (video seeking) vs jpg frames
+frames compared 1455 of 1455 1455 | torso px 225
+median keypoint difference / torso: 0.0047 ; 90th pct 0.0143 ; 99th pct 0.3185

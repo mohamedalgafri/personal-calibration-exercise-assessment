@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PLAN7 extraction</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1b1b1b; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #161616; --fg: #ececec; } }
+  body { background: var(--bg); color: var(--fg); font: 14px/1.4 system-ui, sans-serif; margin: 16px; }
+  video { max-width: 240px; }
+  pre { white-space: pre-wrap; }
+</style>
+</head>
+<body>
+<h1>PLAN7 pose extraction (MediaPipe lite 0.10.14)</h1>
+<p>Videos: <code id="list"></code></p>
+<video id="v" muted playsinline></video>
+<pre id="log"></pre>
+<script type="module">
+// PLAN7 §4: every frame, presented-frame media time recorded, same settings as the smoke test.
+import { FilesetResolver, PoseLandmarker } from "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14/vision_bundle.mjs";
+const q = new URLSearchParams(location.search);
+const IDS = (q.get("ids") || "").split(",").filter(Boolean);
+const ATTEMPT = q.get("attempt") || "1";
+const FPS = 30;
+document.getElementById("list").textContent = IDS.join(", ") + ` (attempt ${ATTEMPT})`;
+const log = (s) => { document.getElementById("log").textContent += s + "\n"; };
+const fileset = await FilesetResolver.forVisionTasks("https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14/wasm");
+const v = document.getElementById("v");
+for (const id of IDS) {
+  // parallel mode: skip videos that are not downloaded yet, already done, or claimed by another window
+  const head = await fetch(`../data/intra/${id}.mp4`, { method: "HEAD" });
+  if (!head.ok) { log(`${id}: not downloaded yet, skipped`); continue; }
+  const claim = await fetch(`/claim/${id}_attempt${ATTEMPT}`, { method: "POST" });
+  if (claim.status !== 200) { log(`${id}: done or taken by another window, skipped`); continue; }
+  const lm = await PoseLandmarker.createFromOptions(fileset, {
+    baseOptions: { modelAssetPath: "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_lite/float16/1/pose_landmarker_lite.task", delegate: "CPU" },
+    runningMode: "VIDEO", numPoses: 1,
+  });
+  v.src = `../data/intra/${id}.mp4`;
+  await new Promise(r => v.addEventListener("loadeddata", r, { once: true }));
+  const N = Math.round(v.duration * FPS);
+  const frames = [], shown = []; let notReady = 0;
+  const t0 = performance.now();
+  const hasRVFC = "requestVideoFrameCallback" in HTMLVideoElement.prototype;
+  for (let i = 0; i < N; i++) {
+    const target = (i + 0.5) / FPS;
+    const presented = new Promise(r => {
+      let done = false; const fin = (t) => { if (!done) { done = true; r(t); } };
+      if (hasRVFC) v.requestVideoFrameCallback((now, md) => fin(md.mediaTime));
+      v.addEventListener("seeked", () => setTimeout(() => fin(hasRVFC ? null : v.currentTime), 300), { once: true });
+      setTimeout(() => fin(null), 2000);
+    });
+    v.currentTime = target;
+    let mt = await presented;
+    if (mt === null) mt = -1;  // presented time unavailable for this frame
+    // never run detection on a frame that is not decoded (added after Stage A attempt 1 stalled at readyState 1)
+    let waited = 0;
+    while (v.readyState < 2 && waited < 10000) { await new Promise(r => setTimeout(r, 50)); waited += 50; }
+    if (v.readyState < 2) { notReady++; shown.push(-2); frames.push(null); continue; }
+    shown.push(mt);
+    const res = lm.detectForVideo(v, Math.round(i * 1000 / FPS) + 1);
+    const p = res.landmarks && res.landmarks[0];
+    frames.push(p ? p.map(k => [k.x * v.videoWidth, k.y * v.videoHeight, k.visibility ?? 0]) : null);
+    if (i % 300 === 0) log(`${id}: frame ${i}/${N}, ${(i / ((performance.now() - t0) / 1000)).toFixed(1)} fps, poses ${frames.filter(f => f).length}`);
+  }
+  const secs = (performance.now() - t0) / 1000;
+  const out = { id, attempt: ATTEMPT, model: "lite", version: "tasks-vision@0.10.14", width: v.videoWidth, height: v.videoHeight,
+                n_frames: N, seconds: secs, fps_processing: N / secs, rvfc: hasRVFC, not_ready_frames: notReady, presented_time: shown, frames };
+  const r = await fetch(`/save/${id}_attempt${ATTEMPT}.json`, { method: "POST", body: JSON.stringify(out) });
+  log(`${id}: done ${N} frames, ${(N / secs).toFixed(1)} fps, poses ${frames.filter(f => f).length}, saved ${await r.text()}`);
+  lm.close();
+}
+document.title = "DONE PLAN7 extraction";
+</script>
+</body>
+</html>

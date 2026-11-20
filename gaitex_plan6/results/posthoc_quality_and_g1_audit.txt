@@ -1,0 +1,22 @@
+# POST HOC audit: frame quality, repetition counts, G1 decisions (no training)
+
+
+ALL FILES: frames 1089888, invalid 0; frames inside repetitions 607678, invalid inside repetitions 0
+
+Eligible persons with a variant count other than 10 (here "last 5" differs from "reps 6-10" of PLAN6 §10):
+rd/austra: {'rd_correct': 10, 'rd_toes': 10, 'rd_supination': 9, 'rd_pronation': 10}
+rd/rehema: {'rd_correct': 11, 'rd_toes': 10, 'rd_supination': 10, 'rd_pronation': 10}
+rgs/austra: {'rgs_correct': 11, 'rgs_flexion': 10, 'rgs_abduction': 10, 'rgs_stork': 10}
+rgs/etsuko: {'rgs_correct': 11, 'rgs_flexion': 10, 'rgs_abduction': 10, 'rgs_stork': 10}
+rgs/neves: {'rgs_correct': 10, 'rgs_flexion': 15, 'rgs_abduction': 10, 'rgs_stork': 10}
+rgs/rehema: {'rgs_correct': 10, 'rgs_flexion': 11, 'rgs_abduction': 12, 'rgs_stork': 12}
+
+G1/G2 decisions (4-class) per person:
+RD B=8 G1: adapt in 12/38 person×repeat decisions; persons adapted ≥1 time 8/19, both times 4/19, decision changed between repeats 4
+RD B=8 G2: adapt in 8/38 person×repeat decisions; persons adapted ≥1 time 6/19, both times 2/19, decision changed between repeats 4
+RD B=16 G1: adapt in 19/38 person×repeat decisions; persons adapted ≥1 time 11/19, both times 8/19, decision changed between repeats 3
+RD B=16 G2: adapt in 19/38 person×repeat decisions; persons adapted ≥1 time 11/19, both times 8/19, decision changed between repeats 3
+RGS B=8 G1: adapt in 22/30 person×repeat decisions; persons adapted ≥1 time 13/15, both times 9/15, decision changed between repeats 4
+RGS B=8 G2: adapt in 15/30 person×repeat decisions; persons adapted ≥1 time 10/15, both times 5/15, decision changed between repeats 5
+RGS B=16 G1: adapt in 24/30 person×repeat decisions; persons adapted ≥1 time 14/15, both times 10/15, decision changed between repeats 4
+RGS B=16 G2: adapt in 23/30 person×repeat decisions; persons adapted ≥1 time 14/15, both times 9/15, decision changed between repeats 5

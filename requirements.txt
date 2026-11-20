@@ -1,0 +1,2 @@
+# Only non-standard Python dependency for the analysis scripts.
+numpy>=1.24

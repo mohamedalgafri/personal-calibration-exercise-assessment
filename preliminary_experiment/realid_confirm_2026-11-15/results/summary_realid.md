@@ -1,0 +1,12 @@
+| arm | size | code share | random code share (same size) | age/sex share | external MAE | random-list MAE (same size) |
+|---|---|---|---|---|---|---|
+| spearman_top6 | 6.0 | 0.204 (range 0.00–0.50) | 0.251 | 0.176 | 8.72 (range 6.64–12.22) | 8.88 |
+| relieff_std_top6 | 6.0 | 0.222 (range 0.00–0.50) | 0.249 | 0.074 | 8.29 (range 6.50–9.77) | 8.86 |
+| relieff_cross_top6 | 6.0 | 0.417 (range 0.17–0.67) | 0.241 | 0.148 | 9.50 (range 6.62–11.92) | 8.86 |
+| bpso_recordwise | 5.2 | 0.761 (range 0.50–1.00) | 0.241 | 0.141 | 9.53 (range 7.54–12.41) | 8.72 |
+| bpso_personwise | 3.1 | 0.261 (range 0.00–1.00) | 0.255 | 0.064 | 8.65 (range 6.25–12.41) | 8.22 |
+| all_features | 24.0 | 0.250 (range 0.25–0.25) | nan | nan | 8.36 (range 6.55–10.37) | nan |
+| voice_only | 16.0 | 0.000 (range 0.00–0.00) | nan | nan | 7.83 (range 6.73–9.36) | nan |
+
+Jaccard BPSO record-wise vs person-wise (same outer fold): mean 0.17, range 0.00–1.00
+Runtime 1011s; rows=840, subjects=42, d=24.
